@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aashish's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+       body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins' sans-serif;
+            overflow-x: hidden; 
+        }
+
+         nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        nav ul li a:hover {
+            color: rgb(152, 152, 230);
+        }
+
+        .left {
+            font-size: 1.2rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 60px;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 2.3rem;
+
+
+        }
+
+        .rightsection img {
+            width: 60%;
+            margin: 50px 0;
+            align-items: center;
+
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        #element {
+            color: blueviolet;
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .rightsection h1 {
+            margin: -100px 677px;
+            white-space: nowrap;
+            font-size: 1.8rem;
+            color: white;
+        }
+
+        .rightsection h2 {
+            margin: 105px 695px;
+            white-space: nowrap;
+            font-size: 1.1rem;
+            color: gray;
+        }
+
+        .rightsection h3 {
+            margin: -200px 50px;
+            font-size: 1.7rem;
+        }
+
+        .secondsection hr {}
+
+
+
+        .leftsection h1 {
+            margin: -100px 530px;
+            font-size: 40px;
+            color: rgb(223, 208, 85);
+            padding: 10px;
+            display: inline-block;
+        }
+
+        .thirdsection hr {
+            margin: 50px 100px;
+
+        }
+
+        .leftsection h2 {
+            font-size: 20px;
+            margin: 0 120px;
+            color: blueviolet;
+        }
+
+        .info h3 {
+            font-size: 25px;
+            margin: 0 120px;
+        }
+
+        .leftsection a {
+            margin: 0 12%;
+
+        }
+
+        .fourthsection {
+            height: 90vh;
+        }
+
+        .fourthsection h1 {
+            margin: 10% 40%;
+        }
+
+        .fourthsection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: -7% 9%;
+            display: flex;
+        }
+
+        .fourthsection .vertical {
+            height: 80px;
+            width: 1px;
+            background-color: white;
+            margin: 0 130px;
+        }
+
+        .fourthsection i1 {
+            margin: 80px -22px;
+        }
+
+        .fourthsection i2 {
+            margin: 80px -22px;
+
+        }
+
+        .fourthsection i3 {
+            margin: 80px -22px;
+        }
+
+        .fourthsection i4 {
+            margin: 80px -22px;
+        }
+
+        .fourthsection .vertical-title {
+            top: -60px;
+            right: 62px;
+            width: 190px;
+            font-size: 1.5rem;
+            position: relative;
+        }
+
+        .fourthsection .vertical-desc {
+            position: relative;
+            top: -50px;
+            right: 63px;
+            color: rgb(223, 199, 132);
+            font-size: 16px;
+            width: 200px;
+        }
+
+        .skills h1 {
+            bottom: 100px;
+            margin: 20% 43%;
+            font-size: 40px;
+            color: rgb(223, 208, 85);
+            padding: 10px;
+            display: inline-block;
+            white-space: nowrap;
+
+        }
+
+        .skills hr {
+            margin: -220px 100px;
+        }
+
+        .skills .row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem 0;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .skills .row .progress {
+            width: 33rem;
+            padding: 3rem 3rem;
+            position: relative;
+
+
+        }
+
+        .skills .row .progress h3 {
+            color: white;
+            font-weight: normal;
+            font-size: 1.7rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .skills .row .progress .bar {
+
+            box-shadow: var(--box-shadow3);
+            border-radius: 5rem;
+            height: 1rem;
+            padding: .3rem;
+            margin: 2rem 0;
+
+        }
+
+        .skills .row .progress .bar span {
+            display: block;
+            height: 100%;
+            width: 0%;
+            background: green;
+            border-radius: 5rem;
+        }
+
+        .skills .row .progress .html .anim {
+            background: rgb(219, 62, 62);
+            animation: html 1.5s linear forwards;
+        }
+
+        @keyframes html {
+            100% {
+                width: 70%;
+            }
+        }
+
+        .skills .row .progress .cpp .anim {
+            background: rgb(230, 205, 125);
+            animation: cpp 1.5s linear forwards;
+        }
+
+        @keyframes cpp {
+            100% {
+                width: 40%;
+            }
+        }
+
+        .skills .row .progress .python .anim {
+            background: gray;
+            animation: python 1.5s linear forwards;
+        }
+
+        @keyframes python {
+            100% {
+                width: 70%;
+            }
+        }
+
+        .skills .row .progress .javascript .anim {
+            background: rgb(79, 187, 79);
+            animation: javascript 1.5s linear forwards;
+        }
+
+        @keyframes javascript {
+            100% {
+                width: 30%;
+            }
+        }
+
+        .skills .row .progress .sqli .anim {
+            background: skyblue;
+            animation: sqli 1.5s linear forwards;
+        }
+
+        @keyframes sqli {
+            100% {
+                width: 70%;
+            }
+        }
+
+        .skills .row .progress .dsa .anim {
+            background: rgb(153, 92, 211);
+            animation: dsa 1.5s linear forwards;
+        }
+
+        @keyframes dsa {
+            100% {
+                width: 30%;
+            }
+        }
+
+        .skills .row .progress .java .anim {
+            background: rgb(216, 142, 81);
+            animation: java 1.5s linear forwards;
+        }
+
+        @keyframes java {
+            100% {
+                width: 40%;
+            }
+        }
+
+        .skills .row .progress .algorithm .anim {
+            background: rgb(216, 142, 81);
+            animation: algorithm 1.5s linear forwards;
+        }
+
+        @keyframes algorithm {
+            100% {
+                width: 20%;
+            }
+        }
+
+        .project {
+            height: 40vw;
+        }
+
+        .project h1 {
+            margin: 0 43%;
+            font-size: 40px;
+            color: rgb(223, 208, 85);
+            padding: 10px;
+            display: inline-block;
+        }
+
+        .project hr {
+            margin: 50px 100px;
+        }
+
+        .myprojects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 40px;
+            margin: 120px 150px;
+
+        }
+
+        .myprojects a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            margin-top: 20px;
+            display: inline-block;
+
+        }
+
+        .myprojects div {
+            background: rgb(92, 91, 91);
+            padding: 40px;
+            font-size: 13px;
+            font-weight: 300;
+            border-radius: 10px;
+            transition: background 0.5s, transform 0.5s;
+        }
+
+        .myprojects div i {
+            font-size: 30px;
+            margin-bottom: 20px;
+
+        }
+
+        .myprojects div h2 {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .myprojects div:hover {
+            background: rgb(182, 38, 19);
+            transform: translateY(-5px);
+
+        }
+
+        .left {
+            margin-left: 12%;
+            font-size: 1.5rem;
+        }
+
+        .secondsection .fa-brands {
+            margin-top: 250px;
+            margin-left: 50px;
+            color: white;
+            text-align: center;
+            font-size: 40px;
+            transition: background 0.5s, transform 0.5s;
+        }
+
+
+        .secondsection .fa-square-instagram:hover {
+            color: rgb(245, 31, 177);
+            transform: translateY(-8px);
+        }
+
+
+        .secondsection .fa-linkedin:hover {
+            color: rgb(7, 98, 200);
+            transform: translateY(-8px);
+
+        }
+
+        .secondsection .fa-github:hover {
+            transform: translateY(-8px);
+
+
+        }
+
+        .secondsection .fa-solid {
+            color: white;
+            font-size: 40px;
+            margin-left: 50px;
+            transition: background 0.5s, transform 0.5s;
+
+        }
+
+        .secondsection .fa-cloud-arrow-down:hover {
+            color: rgb(96, 231, 157);
+            transform: translateY(-8px);
+        }
+
+
+
+        .thirdsection .btn {
+            padding: 10px;
+            display: inline-block;
+            background: white;
+            margin-top: 30px;
+            margin-left: 20px;
+            font-size: 25px;
+            border-radius: 10px;
+            transition: background 0.5s, transform 0.5s;
+        }
+
+        .thirdsection .btn:hover {
+            background: blueviolet;
+            transform: translateY(-5px);
+
+        }
+
+        .contacts .row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .contacts .row .content {
+
+            padding: 4rem;
+            padding-left: 5rem;
+
+        }
+
+        .contacts .row form {
+
+            padding: 1rem;
+            margin: -250px 1000px;
+
+            margin-bottom: 4rem;
+        }
+
+        .contacts .row form .box {
+            width: 100%;
+            padding: 0.3rem;
+            margin: .8rem 13rem;
+            background: rgb(146, 146, 132);
+            color: black;
+            text-transform: none;
+            font-size: 1.4rem;
+            border-radius: .3rem;
+            border-bottom: 1px solid rgb(68, 24, 230);
+
+        }
+
+        .contacts .row form .message {
+            height: 8rem;
+            resize: none;
+        }
+
+        .contacts .row .content .title {
+            text-transform: uppercase;
+            color: rgb(223, 209, 86);
+            font-size: 40px;
+            padding-bottom: 1rem;
+            margin-bottom: 0rem;
+            margin-left: 27%;
+        }
+
+        .contacts .row .content .info h3 {
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+            padding: .5rem 0;
+            font-weight: normal;
+            text-transform: none;
+        }
+
+        .contacts .row .content .info h3 i {
+            padding-right: 1rem;
+            color: rgb(223, 209, 85);
+            margin-left: 24.5%;
+
+        }
+
+        .contacts .row form .box::placeholder {
+            text-transform: capitalize;
+        }
+
+        .contacts h1 {
+            font-size: 40px;
+            margin-top: 10%;
+            margin-left: 40%;
+            color: rgb(223, 209, 85);
+            padding: 10px;
+            display: inline-block;
+        }
+
+        .contacts hr {
+            margin: 40px 100px;
+        }
+
+        .contacts .row .content .info .btn {
+            font-size: 20px;
+            padding: 8px;
+            background: rgb(228, 53, 53);
+            border-radius: 0.3rem;
+            display: inline-block;
+            margin-left: 213px;
+            margin-top: 10px;
+            transition: background 0.5s, transform 0.5s;
+            cursor: pointer;
+        }
+
+        .contacts .row .content .info .btn:hover {
+            transform: translateY(-5px);
+
+        }
+        .credits{
+            font-size: 20px;
+            margin-left: 450px;
+            margin-bottom: 2px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/789497491d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Aashish's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contacts">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection" id="home">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Aashish</span>
+                <div>and I am a passionate </div>
+
+                <span id="element"></span>
+            </div>
+
+            <div class="rightsection">
+                <img src="Ash3.png" alt="">
+            </div>
+
+        </section>
+
+        <section class="secondsection">
+             <div class="leftsection">
+            </div>
+            <div class="rightsection">
+                <h1>Aashish Mungase</h1>
+                <h2>IT Engineering Student</h2>
+                <h3>I am a T.E IT Engineering Student Pursuing<br> My Degree From International Institute Of</br>
+                    Information Technology, Pune</h3>
+            </div>
+
+            <a href="https://www.linkedin.com/in/aashish-mungase-b156a527a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank" class="fa-brands fa-linkedin"></a>
+
+            <a href="https://github.com/mungaseashu/Aashish.git" target="_blank" class="fa-brands fa-github"></a>
+
+            <a href="https://www.instagram.com/_aashish002?igsh=YjhuNDA2ZzZycDZj" target="_blank"
+                class="fa-brands fa-square-instagram"></a>
+
+            
+
+       <!--     <a href="#" target="_blank" class="fa-solid fa-cloud-arrow-down"></a>    -->
+        </section>
+
+        <section class="thirdsection" id="about">
+            <div class="leftsection">
+                <h1>About Me</h1>
+                <hr>
+                <div class="info">
+                    <h3 data-aos="slide-right"><span style="color: rgb(223, 199, 132);">Name:</span><span> Aashish
+                           Vitthal Mungase</span><br><br></h3>
+                    <h3 data-aos="slide-left"><span style="color: rgb(223, 199, 132);">Graduation Year:</span>
+                        2023-2027<br><br>
+                    </h3>
+                    <h3 data-aos="slide-right"><span style="color: rgb(223, 199, 132);">Branch:</span> Information
+                        Technology<br><br></h3>
+                    <h3 data-aos="slide-left"><span style="color: rgb(223, 199, 132);">Institute:</span> International
+                        Institue
+                        Of Information
+                        Technology, Pune<br><br></h3>
+                    <h3 data-aos="slide-right"><span style="color: rgb(223, 199, 132);">Current Post:</span>
+                        Student<br><br>
+                    </h3>
+                    <a data-aos="flip-right"
+                        href="https://drive.google.com/drive/folders/1b9YUgo_8nDLYOudOqeHuYeIVQRc1z1hC?usp=drive_link"
+                        target="_blank"><button class="btn">My Resume <i class="fas fa-download"></i></button></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="fourthsection" id="education">
+            <div class="leftsection">
+                <h1>Education</h1>
+                <div class="box">
+                    <div class="vertical">
+                        <i1 class="fa-solid fa-graduation-cap"></i1>
+                        <div class="vertical-title">
+                            Passed High School
+                        </div>
+                        <div class="vertical-desc">
+                            Year: 2021
+                            <br>Marks Obtained: 94.00%
+                            <br>School: L.S.B. Waje Vidyalaya, Sinnar
+
+                        </div>
+                    </div>
+                    <div class="vertical">
+                        <i1 class="fa-solid fa-graduation-cap"></i1>
+                        <div class="vertical-title">
+                            Passed Higher Secondary School
+                        </div>
+                        <div class="vertical-desc">
+                            Year: 2021-2023
+                            <br>Marks Obtained: 71.33%
+                            <br>College: Akash Public School And Jr.College, Sinnar
+
+                        </div>
+                    </div>
+                    <div class="vertical">
+                        <i1 class="fa-solid fa-graduation-cap"></i1>
+                        <div class="vertical-title">
+                            Undergraduate Degree
+                        </div>
+                        <div class="vertical-desc">
+                            Year: 2023-Current
+                            <br>C.G.P.A: 9.00
+                            <br>Institute: International Institue Of Information Technology, Pune
+
+                        </div>
+                    </div>
+                    <div class="vertical">
+                        <i1 class="fa-solid fa-graduation-cap"></i1>
+                        <div class="vertical-title">
+                            Certifications
+                            <br><br>
+                        </div>
+                        <div class="vertical-desc">
+                            * NPTEL Certifications
+                            <br>* IBM Skillsets
+                            <br>* HackerRank Certificates
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <h1>My Skills</h1>
+            <hr>
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="row">
+                <div class="progress">
+                    <h3> HTML & CSS <span>70%</span> </h3>
+                    <div class="bar html"><span class="anim reveal"></span></div>
+                    <h3> C/C++ <span>40%</span> </h3>
+                    <div class="bar cpp"><span class="anim reveal"></span></div>
+                    <h3> Python <span>70%</span> </h3>
+                    <div class="bar python"><span class="anim reveal"></span></div>
+                    <h3> SQL <span>70%</span> </h3>
+                    <div class="bar sqli"><span class="anim reveal"></span></div>
+
+                </div>
+                <div class="progress">
+                    <h3> Data Structure <span>30%</span> </h3>
+                    <div class="bar dsa"><span class="anim reveal"></span></div>
+                    <h3> Javascript <span>30%</span> </h3>
+                    <div class="bar javascript"><span class="anim reveal"></span></div>
+                    <h3> Java <span>40%</span> </h3>
+                    <div class="bar java"><span class="anim reveal"></span></div>
+                    <h3> Algorithms <span>20%</span> </h3>
+                    <div class="bar algorithm"><span class="anim reveal"></span></div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="project" id="project">
+            <h1>Projects</h1>
+            <hr>
+            <div class="myprojects">
+                <div>
+                    <i class="fa-regular fa-address-card"></i>
+                    <h2>Surround View System</h2>
+                    <h4>It is a real-time image processing project.<br>It combines four different images
+                        (having some part common) into a single image smoothly.</h4>
+                    <a href="https://github.com/mungaseashu/Surround-View-System">See More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Fire Fighting Robot</h2>
+                    <h4>Develop a solution to detect fire and autonomously extinguish the fire.</h4>
+                    <a href="https://github.com/mungaseashu/Fire-Fighting-Robot">See More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Machine Learning Project</h2>
+                    <h4>Predict the prices of California houses by using ML Algorithm.</h4>
+                    <a href="https://github.com/mungaseashu/California-Houses-Price-Prediction">See More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts" id="contacts">
+            <h1>Contact Me</h1>
+            <hr>
+            <div class="row">
+                <div class="content" data-aos="slide-right">
+
+                    <h3 class="title">contact info</h3>
+
+                    <div class="info">
+                        <h3> <i class="fas fa-envelope"></i>mungaseashu02@gmail.com</h3>
+                        <h3><i class="fas fa-phone"></i>+919561625018</h3>
+                        <h3><i class="fas fa-map-marker-alt"></i>International Institute Of Information <br> Technology,
+                            Pune-411057
+                        </h3>
+                        <form method="">
+                            <input type="text" placeholder="name" id="sendername" class="box">
+                            <input type="email" placeholder="email" id="reply_to" class="box">
+                            <input type="phone" placeholder="Phone" id="phone" class="box">
+                            <input type="text" placeholder="subject" id="subject" class="box">
+                            <textarea id="message" cols="30" rows="8" class="box message"
+                                placeholder="message"></textarea>
+                            <button type="submit" class="btn" onclick="sendMail();"> Send <i
+                                    class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                    
+                    </div>
+
+                </div>
+                <script>
+                    function sendMail() {
+                        (function () {
+                            emailjs.init("dpqz6N77kqk8R0-9h"); // Account Public Key 
+                        })();
+                        var params = {
+                            sendername: document.querySelector("#sendername").value,
+                            //to: document.querySelector("#to").value,
+                            phone: document.querySelector("#phone").value,
+                            subject: document.querySelector("#subject").value,
+                            replyto: document.querySelector("#reply_to").value,
+                            message: document.querySelector("#message").value,
+                        };
+                        var serviceID = "service_zv9t7mi"; // Email Service ID
+                        var templateID = "template_wry0v7l"; // Email Template ID
+
+                        emailjs.send(serviceID, templateID, params)
+                            .then(res => {
+                                alert("Email Send Successfully !")
+                            })
+                            .catch("Error !");
+                    }
+                </script>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'IT Engineer', 'Data Scientist'],
+            typeSpeed: 50,
+        });
+    </script>
+
+    <div class="credits">Copyright &#169;<span style="color: rgb(223, 208, 85);">
+        Aashish Mungase</span> | all rights reserved |2025. </div>
+</body>
+
+</html>
